@@ -10,8 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 
-  $('#likeBtn').click(clickedLike);
-  $('#likeCtr').click(clickedLike);
+  $('.likeBtn').click(clickedLike);
+  $('.likeCtr').click(clickedLike);
 
 }
 
