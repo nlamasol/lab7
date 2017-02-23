@@ -7,7 +7,7 @@ var projects = require('../projects.json');
 exports.view = function(req, res){
 
     projects["min"] = false;
-    $.('#likeBtn').click(clickedLike);
+
     res.render('index', projects);
 
 };
@@ -15,10 +15,6 @@ exports.view = function(req, res){
 exports.viewMin = function(req, res){
 
     projects["min"] = true;
-    $.('#likeCtr').click(clickedLike);
+
     res.render('index', projects);
 };
-
-function clickedLike (){
-  ga("send", "event", 'like', 'click');
-}
